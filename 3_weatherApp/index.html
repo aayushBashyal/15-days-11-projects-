@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+        </header>
+
+        <!-- Search Section -->
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Current Weather Section -->
+        <div class="weather-card">
+            <h2 id="cityName">Search for a city</h2>
+            <p id="currentDate">--</p>
+            <div class="main-weather">
+                <img id="weatherIcon" src="" alt="Weather icon">
+                <div class="temp-info">
+                    <h1 id="temperature">--°C</h1>
+                    <p id="condition">--</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weather Details -->
+        <div class="details-grid">
+            <div class="detail-box">
+                <h3>Feels Like</h3>
+                <p id="feelsLike">--°C</p>
+            </div>
+            <div class="detail-box">
+                <h3>Humidity</h3>
+                <p id="humidity">--%</p>
+            </div>
+            <div class="detail-box">
+                <h3>Wind Speed</h3>
+                <p id="windSpeed">-- km/h</p>
+            </div>
+            <div class="detail-box">
+                <h3>Wind Direction</h3>
+                <p id="windDir">--</p>
+            </div>
+            <div class="detail-box">
+                <h3>Sunrise</h3>
+                <p id="sunrise">--</p>
+            </div>
+            <div class="detail-box">
+                <h3>Sunset</h3>
+                <p id="sunset">--</p>
+            </div>
+        </div>
+
+        <!-- 3-Day Forecast -->
+        <div class="forecast-section">
+            <h2>3-Day Forecast</h2>
+            <div class="forecast-grid" id="forecastContainer">
+                <!-- Forecast cards will be added here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
